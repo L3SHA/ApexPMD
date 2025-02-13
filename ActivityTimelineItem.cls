@@ -70,9 +70,9 @@ public with sharing class ActivityTimelineItem implements Comparable {
         }
     }
 
-    private Boolean notCompletedTask(SObject sObj) {
-        return sObj instanceof Task && ((Task) sObj).Status != 'Completed' && ((Task) sObj).Status != 'Genomförd';
-    }
+    // private Boolean notCompletedTask(SObject sObj) {
+    //     return sObj instanceof Task && ((Task) sObj).Status != 'Completed' && ((Task) sObj).Status != 'Genomförd';
+    // }
 
     public Integer compareTo(Object obj) {
         Datetime activityDate = ((ActivityTimelineItem) obj).activityDate;
